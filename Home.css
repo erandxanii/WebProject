@@ -1,0 +1,24 @@
+
+.body{
+    margin: 0;
+    padding: 0;
+    background-image: url('adn.jpg');
+    background-size: 100% 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    height: 100vh;
+    display: flex;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+}
+.pjesa1{
+    margin-top: 3% ;
+    margin-left: 12%;
+    width: 200px;
+    font-size: larger;
+}
+.titujt{
+    font-weight: bold;
+    font-size: 60px;
+}
