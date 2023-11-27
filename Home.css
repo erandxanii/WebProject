@@ -7,18 +7,37 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; 
-    height: 100vh;
+    height: 70vh;
     display: flex;
     color: white;
     font-family: "Times New Roman", Times, serif;
 }
 .pjesa1{
     margin-top: 3% ;
-    margin-left: 12%;
-    width: 200px;
+    margin-left: 11%;
+    width: 250px;
     font-size: larger;
 }
 .titujt{
     font-weight: bold;
     font-size: 60px;
+}
+.body button{
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius:40px;
+    width: 150px;
+    height: 40px;
+    text-wrap: nowrap;
+    color: white;
+    font-size: larg;
+    font-weight: bold;
+}
+.body button:hover{
+    cursor: pointer;
+    background-color: lightgreen;
+    border: 0;
+}
+.listelements{
+    padding-left: 20px;
 }

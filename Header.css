@@ -1,5 +1,6 @@
 *{
     margin: 0%;
+    transition: 0.7s ease-out;
 }
 .header{
     display: flex;
@@ -13,7 +14,7 @@
     height: 50px;
 }
 .logo{
-    margin-left: 12%;
+    margin-left: 11%;
 }
 .lista{
     margin-top: 20px;

@@ -1,0 +1,28 @@
+footer{
+    margin-top: 560px;
+    color: grey;
+    display: flex;
+    width: 80%;
+    margin-left: 10px;
+    justify-content: space-between;
+    margin-left: -16%;
+}
+.footerlist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+    justify-content: space-between;
+}
+.linkedin{
+    width: 120px;
+    filter: grayscale(100%);
+}
+.linkedin:hover{
+    filter: grayscale(0%);
+    width: 130px;
+}
+.footerunderline{
+    text-decoration-line:none ;
+    padding: 5px;
+}
