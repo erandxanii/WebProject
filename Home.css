@@ -2,7 +2,7 @@
 .body{
     margin: 0;
     padding: 0;
-    background-image: url('adn.jpg');
+    background-image: url('adna.jpg');
     background-size: 100% 90%;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,6 +11,7 @@
     display: flex;
     color: white;
     font-family: "Times New Roman", Times, serif;
+    animation: infiniteScroll 10s linear infinite;
 }
 .pjesa1{
     margin-top: 3% ;
