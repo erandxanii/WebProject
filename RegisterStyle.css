@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(Laborator.png);
+  background-size:cover ;
+  height: 100vh;
+
+}
+.main{
+  position: relative;
+  max-width: 425px;
+  width: 100%;
+  padding: 34px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+}
+.main h2{
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-left: 30%;
+}
+
+.main form{
+  margin-top: 30px;
+}
+.main form .input{
+  height: 52px;
+  margin: 18px 0;
+}
+form .input input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #C7BEBE;
+  border-bottom-width: 3px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+form .policy{
+  display: flex;
+  align-items: center;
+}
+form h3{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.input.button input{
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #4070f4;
+  cursor: pointer;
+}
+.input.button input:hover{
+  background: #1a57fd;
+}
+form .text h3{
+ color: #333;
+ width: 100%;
+ text-align: center;
+}
+form .text h3 a{
+  color: #4070f4;
+  text-decoration: none;
+}
+form .text h3 a:hover{
+  text-decoration: underline;
+}
+.main h2:hover{
+  color:#1a57fd;
+}
