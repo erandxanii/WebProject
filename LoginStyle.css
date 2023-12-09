@@ -11,6 +11,7 @@ body{
   background: url(Laborator.png);
   background-size:cover ;
   height: 100vh;
+  
 
 }
 .main{
@@ -26,7 +27,7 @@ body{
   font-size: 22px;
   font-weight: 600;
   color: #3e3e3e;
-  margin-left: 30%;
+  margin-left: 40%;
 }
 .main form{
   margin-top: 30px;
@@ -49,10 +50,6 @@ form .input input{
   transition: all 0.3s ease;
 }
 
-form .policy{
-  display: flex;
-  align-items: center;
-}
 form h3{
   color: #707070;
   font-size: 14px;
