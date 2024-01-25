@@ -1,3 +1,13 @@
+.foto {
+  display: flex;
+  flex-direction: column;
+} 
+
+.arrow{
+  width: 40px;
+  height: 40px;
+  margin-top: 5px;
+}
 
   *{
     margin: 0;
@@ -70,7 +80,6 @@
 }
 .b{
   height: 518px;
-  /* background-color: rgb(134, 136, 236); */
   background-color: rgb(159, 201, 217);
 }
 .inputat{
@@ -109,4 +118,42 @@ textarea{
 .teksti input:hover{
   width: 140px;
   height: 42px;
+}
+@media only screen and (max-width: 1250px) {
+   .teksti p{
+    font-size: 17px;
+    margin-left: 0;
+    margin-left: -20%;
+   }
+   .teksti h1{
+    font-size: 20px;
+    margin-left: -20%;
+   }
+}
+
+@media only screen and (max-width: 850px) {
+    .underline{
+      font-size: 7px;
+    }
+    .zyra{
+      width: 270px;
+      height: 180px;
+      margin-top: 50%;
+    }
+    .asd{
+      display: none;
+  }
+  .inputat input{
+    width: 120px;
+  }
+  textarea{
+    width: 120px;
+  }
+  .teksti input{
+    margin-left: -20%;
+  }
+  .arrow{
+    width: 20px;
+    height: 20px;
+  }
 }

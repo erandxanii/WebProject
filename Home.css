@@ -42,3 +42,16 @@
 .listelements{
     padding-left: 20px;
 }
+@media only screen and (max-width: 800px) {
+
+    .fundi{
+        margin-left: -40%;  
+    }
+    .asd{
+        display: none;
+    }
+    .underline{
+        font-size: 7px;
+    }
+}
+

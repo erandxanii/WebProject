@@ -53,3 +53,17 @@
 .productsandtext{
     background-color: lightblue;
 }
+@media only screen and (max-width: 850px) {
+    .Produketet{
+      margin-left: 30%;
+    }
+    .underline{
+      font-size: 7px;
+    }
+    .asd{
+      display: none;
+  }
+  .inputat input{
+    width: 20px;
+  }
+}
