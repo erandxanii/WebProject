@@ -14,7 +14,7 @@
         <div class="kontakti">
             <ul class="lista">
                 <li><a href="Produktet.php" class="underline">Produktet</a></li>
-                <li><a href="lajme.html" class="underline">Lajme</a></li>
+                <li><a href="lajme.php" class="underline">Lajme</a></li>
                 <li><a href="Kontakti.php" class="underline">Kontakti</a></li>
             </ul>
         </div>
@@ -29,8 +29,8 @@
             <p>Prezantimi i inovacionit për të shpëtuar
             dhe përmirësuar jetë</p>
             <br><br>
-            <a href="About us.html"><button>Rreth kompanisë</button></a>
-            <a href="login.html"><button style="margin-top: 10px;">Kyqu</button></a>
+            <a href="About us.php"><button>Rreth kompanisë</button></a>
+            <a href="login.php"><button style="margin-top: 10px;">Kyqu</button></a>
 
     </div>
     <footer>

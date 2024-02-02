@@ -12,10 +12,10 @@
         <div class="logo"><a href="Home.html"><img src="logo.png" alt="Logo" class="foto1"></a></div>
         <div class="kontakti">
             <ul class="lista">
-                <li><a href="Home.html" class="underline">Kryesore</a></li>
+                <li><a href="Home.php" class="underline">Kryesore</a></li>
                 <li><a href="Produktet.html" class="underline">Produktet</a></li>
-                <li><a href="lajme.html" class="underline">Lajme</a></li>
-                <li><a href="Kontakti.html" class="underline">Kontakti</a></li>
+                <li><a href="lajme.php" class="underline">Lajme</a></li>
+                <li><a href="Kontakti.php" class="underline">Kontakti</a></li>
             </ul>
         </div>
     </div>

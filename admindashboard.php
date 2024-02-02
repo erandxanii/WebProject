@@ -39,7 +39,7 @@ $emri = $_SESSION["emri"];
     <h2>Miresevini ne dashboard <?php echo $emri; ?>, ju lutem zgjedhni se ku do te vazhdoni</h2>
 
     <a href="shtoproduktin.html"><button class="butoni">Produktet</button></a>
-    <a href="mesazhet.php"><button class="butoni">Mesazhet</button></a>
+    <a href="mesazhet.php"><button class="butoni">Lexo Mesazhet</button></a>
     <a href="shtolajmin.html"><button class="butoni">Lajmet</button></a><br>
 
     <a href="logout.php"><button class="butoni" style="margin-top:100px">Dilni</button></a>

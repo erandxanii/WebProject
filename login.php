@@ -20,7 +20,7 @@
             <input type="submit">
           </div>
           <div class="text">
-            <h3>Doesn't have an account? <a href="register.html">Register now</a></h3>
+            <h3>Doesn't have an account? <a href="register.php">Register now</a></h3>
           </div>
         </form>
     </div>
