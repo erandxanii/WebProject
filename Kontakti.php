@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="Kontakti.css">
+    <link rel="stylesheet" href="kontakti.css">
     <link rel="stylesheet" href="Header.css">
 </head>
 <body>
@@ -12,12 +12,10 @@
         <div class="logo"><a href="Home.html"><img src="logo.png" alt="Logo" class="foto1"></a></div>
         <div class="kontakti">
             <ul class="lista">
-                <li><a href="Home.html" class="underline">Kryesore</a></li>
-                <li><a href="Produktet.html" class="underline">Produktet</a></li>
-                <li><a href="About us.html" class="underline">Rreth nesh</a></li>
-                <li><a href="lajme.html" class="underline">Lajme</a></li>
-                <li><a href="#" class="underline">Kontakti</a></li>
-                
+                <li><a href="Home.php" class="underline">Kryesore</a></li>
+                <li><a href="Produktet.php" class="underline">Produktet</a></li>
+                <li><a href="About us.php" class="underline">Rreth nesh</a></li>
+                <li><a href="lajme.php" class="underline">Lajme</a></li>
             </ul>
         </div>
     </div>

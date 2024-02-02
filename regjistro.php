@@ -17,7 +17,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
+    $checkEmailQuery = "SELECT * FROM perdoruesit WHERE email = '$email'";
+    $result = $conn->query($checkEmailQuery);
 
+    if ($result->num_rows > 0) {
+        echo "Ekziston një perdorues me këtë email. Ju lutemi, përdorni një email tjetër.";
+        exit;
+    }
 
     
     $sql = "INSERT INTO perdoruesit (emri, email, fjalekalimi)

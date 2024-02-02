@@ -11,6 +11,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = isset($_POST['email']) ? $_POST['email'] : "";
     $mesazhi = isset($_POST['mesazhi']) ? $_POST['mesazhi'] : "";
 
+    if($emri==null){
+        echo"Emri nuk mund te jet null";
+        exit;
+    }
+
+    if($mbiemri==null){
+        echo"Mbiemri nuk mund te jet null";
+        exit;
+    }
+    if($email==null){
+        echo"Email nuk mund te jet null";
+        exit;
+    }
+    if($mesazhi==null){
+        echo"Mesazhi nuk mund te jet null";
+        exit;
+    }
 
 
     // Shto të dhënat në bazën e të dhënave
