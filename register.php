@@ -10,25 +10,25 @@
     
     <div class="main">
       <h2>Registration</h2>
-      <form onsubmit="return validateForm()">
+      <form action="regjistro.php" method="post" onsubmit="return validateForm()">
         <div class="input">
-          <input type="text" placeholder="Enter your name" id="name" required>
+          <input type="text" placeholder="Enter your name" name="emri" id="name" required>
         </div>
         <div class="input">
-          <input type="text" placeholder="Enter your email" id="email" required>
+          <input type="text" placeholder="Enter your email" name="email" id="email" required>
         </div>
         <div class="input">
-          <input type="password" placeholder="Create password" id="password" required>
+          <input type="password" placeholder="Create password" name="fjalekalimi" id="password" required>
         </div>
         <div class="input">
-          <input type="password" placeholder="Confirm password" id="confirmpassword" required>
+          <input type="password" placeholder="Confirm password" name="confirmpassword" id="confirmpassword" required>
         </div>
         <div class="policy">
           <input type="checkbox" required>
           <h3>I accept all terms & conditions</h3>
         </div>
         <div class="input button">
-          <input type="submit">
+          <input type="submit" value="Regjistrohu">
         </div>
         <div class="text">
           <h3>Already have an account? <a href="login.html">Login now</a></h3>
@@ -54,8 +54,7 @@
           return false;
         }
 
-        
-        if (password.length<6) {
+        if (password.length < 6) {
           alert('Please enter a valid password');
           return false;
         }
@@ -67,6 +66,3 @@
 
         return true;
       }
-    </script>
-  </body>
-</html>
