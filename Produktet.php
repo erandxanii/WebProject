@@ -11,13 +11,13 @@
 <body>
 
     <div class="header">
-        <div class="logo"><a href="Home.html"><img src="logo.png" alt="Logo" class="foto1"></a></div>
+        <div class="logo"><a href="Home.php"><img src="logo.png" alt="Logo" class="foto1"></a></div>
         <div class="kontakti">
             <ul class="lista">
-                <li><a href="Home.html" class="underline">Kryesore</a></li>
-                <li><a href="About us.html" class="underline">Rreth nesh</a></li>
-                <li><a href="lajme.html" class="underline">Lajme</a></li>
-                <li><a href="Kontakti.html" class="underline">Kontakti</a></li>
+            <li><a href="Home.php" class="underline">Kryesore</a></li>
+                <li><a href="About us.php" class="underline">Rreth nesh</a></li>
+                <li><a href="lajme.php" class="underline">Lajme</a></li>
+                <li><a href="Kontakti.php" class="underline">Kontakti</a></li>
             </ul>
         </div>
     </div>
@@ -29,22 +29,33 @@
         <div class="teksti"><p>Portofoli ynë përfshin më shumë se 60 produkte; më shumë se 20 prej tyre janë biologjike. Këtu mund të gjeni listën e produkteve më të shitura të BIOCAD, të cilat ne tashmë po i eksportojmë ose jemi gati t'i eksportojmë në të ardhmen e afërt.</p></div>
     </div>
     <div class="Produketet">
-        <div class="foto"><a href="#"><img src="acellbia.png" alt="Acellbia" class="produkti"></a><p>Acellbia®</p></div>
-        <div class="foto"><a href="#"><img src="avegra.png" alt="Avegra" class="produkti"></a><p>Avegra®</p></div>
-        <div class="foto"><a href="#"><img src="herticad.png" alt="Herticad" class="produkti"></a><p>Herticad®</p></div>
-        <div class="foto"><a href="#"><img src="levilimab.png" alt="Levolimab" class="produkti"></a><p>Levolimab</p></div>
-        <div class="foto"><a href="#"><img src="prolgolimab1.png" alt="Prolgolimab" class="produkti"></a><p>Prolgolimab</p></div>
-        <div class="foto"><a href="#"><img src="netakimab.png" alt="Netakimab" class="produkti"></a><p>Netakimab</p></div>
-        <div class="foto"><a href="#"><img src="eculizumab.png" alt="Eculizumab" class="produkti"></a><p>Eculizumab</p></div>
-        <div class="foto"><a href="#"><img src="Teriflunomid.png" alt="Teriflunomid" class="produkti"></a><p>Teriflunomid</p></div>
-        <div class="foto"><a href="#"><img src="Fingolimod.png" alt="Fingolimod" class="produkti"></a><p>Fingolimod</p></div>
+        <?php
+require_once("dbconnect.php");
+
+    session_start();
+
+    $sql = "SELECT * FROM `produktet`";
+    $result = $conn->query($sql);
+    
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            echo '<div class="foto"><a href="#"><img src="'.$row['path'].'" alt="'. $row['emri'].'" class="produkti"></a><p>'.$row['emri'].'<br><p style="font-size:8px;color:gray;margin-top:2px;">Added by admin: ' . $row['modifikuesi'] . '</p></p></div>';
+        }
+    }elseif ($result->num_rows == 0) {
+            echo 'Nuk ka lajme te reja';
+    }
+
+    
+
+$conn->close();
+?>
     </div>
     <br><br><br>
 </div>
 
 <footer>
     <div> <p>E drejta e autorit ©2023</p></div>
-     <div class="asd">
+     <div>
          <ul class="footerlist">
             <a href="#" class="footerunderline"> <li class="listelements">Politika e mbrojtjes së të dhënave</li></a>
             <a href="#" class="footerunderline">  <li class="listelements">Marrëveshja e përdoruesit</li></a>
