@@ -33,21 +33,30 @@
 
     <div class="main">
 
-        <div class="lajmi">
-            <h1>Lajmi rreth arritjes së aparaturës së re në laborator është bërë publik.</h1>
-            <p>Ne laboratorin tonë, kemi marrë aparaturë të re për kontrollin e sëmundjes së kancerit, duke mundësuar kështu kontrolle më të holësishme në lidhje me këtë sëmundje.</p>
-        </div>
+    <?php
+require_once("dbconnect.php");
 
-        <div class="lajmi">
-            <h1>Pjesëmarrja jonë në konferencën rreth zbulimit të medikamenteve.</h1>
-            <p>Konferenca rreth mjekësive për luftën kundër sëmundjeve të melqis është mbajtur në Berlin, ku udhëheqësit e laboratorit tonë morën pjesë dhe ndanë pervojat e tyre të ndryshme në këtë fushë.</p>
-        </div>
 
-        <div class="lajmi">
-            <h1>Vizitë nga një ekspert i fushës së medikamenteve në laboratorin tonë.</h1>
-            <p>Dr. Paul Farmer, themeluesi i organizatës 'Partners In Health', ka vizituar laboratorin tonë dhe është ndar shumë i kënaqur me kushtet dhe mundësitë që ofron stafi dhe laboratori ynë.</p>
 
-        </div>
+    $sql = "SELECT * FROM `lajmet`";
+    $result = $conn->query($sql);
+    
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            echo '<div class="lajmi">';
+            echo '<h1>' . $row['titulli'] . '</h1>';
+            echo '<p>' . $row['permbajtja'] . '</p>';
+            echo '</div>';
+        }
+    }elseif ($result->num_rows == 0) {
+            echo 'Nuk ka lajme te reja';
+    }
+
+    
+
+$conn->close();
+?>
+
     </div> 
 </div>
 <footer>
