@@ -43,8 +43,8 @@ $emri = $_SESSION["emri"];
     <a href="Produktet.php"><button class="butoni">Produktet</button></a>
     <a href="lajme.php"><button class="butoni">Lajmet</button></a>
     <a href="Kontakti.php"><button class="butoni">Kontakti</button></a>
-    <a href="About us.php"><button class="butoni">Rreth nesh</button></a> 
-
+    <a href="About us.php"><button class="butoni">Rreth nesh</button></a><br>
+    <a href="logout.php"><button class="butoni" style="margin-top:100px">Dilni</button></a>
 
 </body>
 </html>
