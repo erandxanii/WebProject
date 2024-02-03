@@ -1,3 +1,22 @@
+<?php
+
+
+
+session_start();
+
+
+if (!isset($_SESSION["emri"])) {
+    header("Location: login.php"); 
+    exit();
+}
+
+$emri = $_SESSION["emri"];
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +38,7 @@
 
 </head>
 <body>
-    <h2>Miresevini ne dashboard, ju lutem zgjedhni se ku do te vazhdoni</h2>
+    <h2>Miresevini ne dashboard <?php echo $emri; ?>, ju lutem zgjedhni se ku do te vazhdoni</h2>
 
     <a href="Produktet.php"><button class="butoni">Produktet</button></a>
     <a href="Lajmet.php"><button class="butoni">Lajmet</button></a>
