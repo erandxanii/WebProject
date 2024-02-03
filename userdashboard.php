@@ -22,8 +22,8 @@
     <h2>Miresevini ne dashboard, ju lutem zgjedhni se ku do te vazhdoni</h2>
 
     <a href="Produktet.php"><button class="butoni">Produktet</button></a>
-    <a href="Lajmet.php"><button class="butoni">Lajmet</button></a>
-    <a href="About us.php"><button class="butoni">Kontakti</button></a>
+    <a href="lajme.php"><button class="butoni">Lajmet</button></a>
+    <a href="Kontakti.php"><button class="butoni">Kontakti</button></a>
     <a href="About us.php"><button class="butoni">Rreth nesh</button></a> 
 
 
