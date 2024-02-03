@@ -6,7 +6,7 @@
     <title>Lajme rreth PreventivaLab</title>
 
     <link rel="stylesheet" href="Header.css">
-    <link rel="stylesheet" href="Lajme.css">
+    <link rel="stylesheet" href="lajme.css">
  
 
 </head>
@@ -15,10 +15,10 @@
         <div class="logo"><a href="Home.html"><img src="logo.png" alt="Logo" class="foto1"></a></div>
         <div class="kontakti">
             <ul class="lista">
-                <li><a href="Home.html" class="underline">Kryesore</a></li>
-                <li><a href="Produktet.html" class="underline">Produktet</a></li>
-                <li><a href="About us.html" class="underline">Rreth nesh</a></li>
-                <li><a href="Kontakti.html" class="underline">Kontakti</a></li>
+                <li><a href="Home.php" class="underline">Kryesore</a></li>
+                <li><a href="Produktet.php" class="underline">Produktet</a></li>
+                <li><a href="About us.php" class="underline">Rreth nesh</a></li>
+                <li><a href="Kontakti.php" class="underline">Kontakti</a></li>
             </ul>
         </div>
     </div> 
@@ -35,7 +35,7 @@
     <?php
 require_once("dbconnect.php");
 
-
+    session_start();
 
     $sql = "SELECT * FROM `lajmet`";
     $result = $conn->query($sql);
@@ -45,7 +45,9 @@ require_once("dbconnect.php");
             echo '<div class="lajmi">';
             echo '<h1>' . $row['titulli'] . '</h1>';
             echo '<p>' . $row['permbajtja'] . '</p>';
+            echo '<p style="color:gray;margin-top:24px;font-size:8px;">Added by admin: ' . $row['modifikuesi'] . '</p>';
             echo '</div>';
+           
         }
     }elseif ($result->num_rows == 0) {
             echo 'Nuk ka lajme te reja';
